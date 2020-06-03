@@ -1,0 +1,146 @@
+.part-2{
+    text-align: center;
+    margin-top: 15px;
+    display: block;
+}
+
+#barcode {
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    font-family: sans-serif;
+    font-size: 6pt
+}
+
+div.parent {
+    display: inline-block;
+    width: 143px;
+    /*border: solid 1px ;*/
+    padding: 3px;
+    border-radius: 1px;
+    background-clip: content-box;
+    margin: 10px;
+}
+
+.barcode_img {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.parent > div {
+    /*border: solid 1px #000;*/
+    padding: 5px;
+    background-color: white;
+    font-size: 10px;
+    text-indent: 0.25rem;
+}
+
+.parent > div div {
+    /*height: 25px;*/
+}
+
+.parent img {
+    margin-top: 3px;
+    margin-bottom: -15px;
+}
+
+.parent > div > div :first-child {
+}
+
+.parent > div > div > div {
+    display: inline-block;
+}
+
+div h6 {
+    display: inline-block;
+    font-weight: 100;
+    height: 10px;
+    /*line-height: 0em;*/
+    margin: 0px;
+    font-size: 10px;
+}
+
+.parent div h4 {
+    line-height: 1px;
+    display: inline-block;
+}
+
+body {
+    background: #fff;
+}
+
+@media print {
+    .part-2{
+        text-align: center;
+        margin-top: -10px !important;
+        display: block;
+    }
+
+    #barcode {
+        font-weight: normal;
+        font-style: normal;
+        line-height: normal;
+        font-family: sans-serif;
+        font-size: 6pt
+    }
+
+    /* edit__ */
+    div.parent {
+        display: inline-block;
+        width: 100% !important;
+        padding: 5px !important;
+        background-clip: content-box;
+        margin: 5px 0 !important;
+    }
+
+    /* edit__ */
+    .barcode_img {
+        width: 120px !important;
+        height: 30px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        vertical-align: middle !important;
+        display: block !important;
+    }
+
+    .parent > div {
+        width: 90%;
+        padding: 0 !important;
+        background-color: white;
+        font-size: 9px;
+        text-indent: 0.25rem;
+        display: block;
+    }
+
+    .parent > div > div :first-child {
+        margin-bottom: 0px;
+    }
+
+    .parent > div > div > div {
+        display: inline-block;
+    }
+
+    div h6 {
+        display: inline-block;
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    .parent div h4 {
+        line-height: 1px;
+        display: inline-block;
+    }
+
+    .part-2{
+        padding-top: 15px !important;
+        margin-top: 0px!important;
+        height: 20px !important;
+    }
+
+    .barcode_img {
+        display: block;
+        margin-top: 0px!important;
+        /*object-fit: contain !important;*/
+    }
+}

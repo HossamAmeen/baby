@@ -1,0 +1,35 @@
+
+@media (max-width: 768px) {
+
+    .menu {
+        transform: translateX(-250px);
+        box-shadow: none;
+        top: 80px;
+    }
+    .menu.toggle {
+        transform: translateX(0px);
+    }
+    .menu.toggle .brand-name {
+        display: block;
+    }
+
+    .menu.toggle .profile-info {
+        display: block;
+    }
+
+    .menu.toggle .links {
+        display: block;
+    }
+    .content {
+        padding-left: 0;
+    }
+    .content.toggle {
+        padding-left: 0;
+    }
+    footer {
+        padding-left: 0 !important;
+    }
+    .btns-top {
+        text-align: center;
+    }
+}

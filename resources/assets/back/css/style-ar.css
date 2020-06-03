@@ -1,0 +1,881 @@
+/* Base Style
+========================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #F7F7F7;
+    color: #73879C;
+}
+
+.group::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.cuticon {
+    width: 100%;
+    border-bottom: 2px dotted #000;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cuticon img {
+    position: absolute;
+    top: -25px;
+    height: 50px;
+    left: 0;
+}
+
+.invoiceprint {
+    position: relative;
+}
+
+.invoiceprintimg {
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    height: 380px;
+    opacity: 0.1;
+
+}
+
+.invoiceprintimg2 {
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    height: 380px;
+    opacity: 0.1;
+}
+
+/* Menu Style
+========================================*/
+
+.container-fluid, .row {
+    height: 100%
+}
+
+.menu {
+    height: 100%;
+    background: #2A3F54;
+    overflow: auto;
+    box-shadow: -4px 0 6px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*Brand Name*/
+
+.brand-name {
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    direction: rtl;
+}
+
+.brand-name img {
+    width: 30px;
+}
+
+.brand-name h3 {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+}
+
+.brand-name h3 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.brand-name h3 a:hover {
+    color: #FFF;
+}
+
+/*Profile Info*/
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-info img {
+    width: 50px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.profile-info p {
+    display: block;
+    color: #999;
+    text-align: center;
+    direction: rtl;
+}
+
+.profile-info p > span {
+    font-weight: bold;
+    color: white;
+}
+
+/*Links*/
+
+.links {
+    direction: rtl;
+}
+
+.links .link {
+    padding: 15px 10px;
+}
+
+.links .link.active {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+    /*padding: 15px 10px;*/
+}
+
+.links .link:hover {
+    cursor: pointer;
+}
+
+.links .link > i {
+    float: right;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-left: 15px;
+}
+
+.links .link a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.links .link a:focus,
+.links .link a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.links .link > span {
+    float: left;
+    color: #999;
+}
+
+.links .link-data ul {
+    color: white;
+    font-size: 13px;
+    position: relative;
+}
+
+.links .link-data ul > li > a {
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.links .link-data ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/*Sub-Links*/
+
+.links .link-data .sub-link a {
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+}
+
+.links .link-data .sub-link a > i {
+    margin-left: 10px;
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.links .link-data .sub-link a span {
+    float: left;
+    font-size: 10px;
+    color: #999;
+}
+
+.links .link-data .sub-link:hover > a {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.links .link-data .sub-link-data a {
+    /*padding-right: 70px;*/
+}
+
+/* Content Style ---------------*/
+
+.content {
+    padding-right: 250px;
+    padding-left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.content .nav-bar {
+    background: #EDEDED;
+    width: 100%;
+    height: 80px;
+}
+
+.content .nav-bar span {
+    display: inline-block;
+    height: 100%;
+    float: right;
+    line-height: 80px;
+    margin-right: 15px;
+}
+
+.content .nav-bar span > i {
+    cursor: pointer;
+    color: #5A738E;
+}
+
+.content .nav-bar span > i:hover {
+    color: #23527c;
+}
+
+/* Close product Images
+===============================*/
+
+.pro_image {
+    display: inline-block !important;
+    position: relative;
+}
+
+button.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #222;
+    opacity: 1;
+}
+
+/*Language Group*/
+
+.content .nav-bar .language {
+    float: right;
+}
+
+.content .nav-bar ul.lang {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content .nav-bar ul.lang li {
+    display: inline-block;
+}
+
+.content .nav-bar span i {
+    font-size: 27px;
+}
+
+.content .nav-bar .language {
+    float: left;
+    line-height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.content .nav-bar .language:hover {
+    background: #D9DEE4;
+}
+
+/*Log Out*/
+
+.logout {
+    float: left;
+    line-height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logout:hover {
+    background: #D9DEE4;
+}
+
+.logout a {
+    display: block;
+    color: #5A738E;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    color: #23527c;
+}
+
+.logout a span {
+    margin-left: 0 !important;
+    margin-right: 10px;
+}
+
+/* Toggle Class
+========================================*/
+
+.menu.toggle {
+    position: fixed;
+    transform: translateX(225px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu.toggle .brand-name {
+    display: none;
+}
+
+.menu.toggle .profile-info {
+    display: none;
+}
+
+.menu.toggle .links {
+    display: none;
+}
+
+.content.toggle {
+    padding-right: 25px; /*40px*/
+}
+
+/* Information
+========================================*/
+
+.information {
+    height: 100%;
+    width: 95%;
+    padding: 20px;
+    background: #FFF;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #E6E9ED;
+    direction: rtl;
+}
+
+/* Control Buttons
+========================================*/
+
+.ctrl-btns {
+    width: 100%;
+    height: 64px;
+    float: left;
+    padding: 15px 15px 15px 7px;
+}
+
+.btn {
+    padding: 6px 25px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+/* Table
+========================================*/
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+thead {
+    background: rgba(52, 73, 94, 0.94); /*#708090*/
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: #5a6673;
+    color: #FFF;
+}
+
+thead th {
+    padding: 17px 3px !important;
+    border: 3px solid #5a6673;
+    text-align: center;
+}
+
+tbody {
+    background-color: #FFF;
+    border: 1px solid #E2E6E9;
+}
+
+tbody td {
+    padding: 2px 3px !important;
+    border: 1px solid #E2E6E9;
+}
+
+tfoot {
+    background: #B8C0C8;
+    border: 3px solid #A9B3BC;
+}
+
+tfoot td {
+    padding: 5px 3px;
+    border: 3px solid #A9B3BC;
+}
+
+.table {
+    text-align: center !important;
+}
+
+th {
+    text-align: center !important;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 2px !important;
+}
+
+.pay-block {
+    margin-top: 5px;
+}
+
+/* Pages
+========================================*/
+
+/*Buttons Top*/
+
+.btns-top {
+    margin: 18px 5px 25px 0px;
+}
+
+/*Table*/
+
+.wrap {
+    overflow-x: auto;
+    clear: both;
+}
+
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+table.dataTable.no-footer {
+    margin-bottom: 20px;
+}
+
+table.table.table-striped.table-bordered.table-hover.dataTable.no-footer {
+    width: 100% !important;
+    margin-bottom: 0;
+}
+
+.dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+
+table#datatable {
+    width: 100% !important;
+}
+
+table tbody tr td a {
+    color: #5A738E;
+}
+
+table tbody tr td a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
+table.dataTable thead .sorting_asc {
+    background-image: url("../images/sort_both.png") !important;
+}
+
+table.dataTable thead .sorting_desc {
+    background-image: url("../images/sort_both.png") !important;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: rgba(38, 185, 154, 0.07);
+}
+
+table.dataTable thead th, table.dataTable thead td,
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 0;
+}
+
+.permissionTable {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Buttons*/
+
+button {
+    outline: 0 !important;
+}
+
+.image-back {
+    margin-top: 5px;
+}
+
+/*Selects*/
+
+.select-group {
+    width: 250px;
+    display: inline-block;
+}
+
+label {
+    display: block;
+}
+
+/*Btns-Bottom*/
+
+button[type="submit"] {
+    display: inline-block;
+}
+
+/* Footer
+========================================*/
+
+footer {
+    position: relative !important;
+    bottom: 0;
+    padding-right: 250px !important;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    color: #73879C;
+}
+
+footer.toggle {
+    padding-right: 40px !important;
+}
+
+.copyrights {
+    padding: 10px 20px 0;
+}
+
+.copyrights a {
+    color: #73879c;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.copyrights a:hover {
+    color: #23527c;
+}
+
+/* Statistics
+========================================*/
+
+.statistics {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.statistics .state {
+    margin-bottom: 10px;
+}
+
+.state i {
+    margin-left: 5px;
+}
+
+.state p {
+    font-size: 13px;
+}
+
+.state p:first-of-type {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+/* nav tabs */
+.nav-tabs {
+    direction: rtl;
+    display: flex;
+}
+
+.coupon-block {
+    border: 1px solid #ddd;
+    padding: 11px;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+}
+
+.coupon {
+    background-image: url("../../front/img/background.png");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-coupon h2 {
+    COLOR: #702a98;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lemonada', cursive;
+    position: relative
+}
+
+.title-coupon h2::after {
+    position: absolute;
+    left: 25%;
+    bottom: -7px;
+    width: 51%;
+    height: 1em;
+    border-bottom: 5px solid #cda6d9;
+    content: '';
+    box-shadow: 0px 24px 57px -14px #111;
+}
+
+.coupon-text {
+    color: white;
+    position: absolute;
+    top: 52%;
+    left: 30%;
+    font-size: 46px;
+}
+
+.coupon-details {
+    margin-top: 22px;
+    border: 1px dashed #702a98 !important;
+    padding: 9px;
+    text-align: left;
+}
+
+.coupon-details p {
+    color: #702a98;
+    font-family: 'Lemonada', cursive;
+    font-size: 13px;
+    text-shadow: 0 25px 13px #f8f8f8, 0 2px 8px #999999, 0 2px 200px #909090;
+}
+
+.coupon-p {
+    color: #702a98;
+    font-family: 'Lemonada', cursive;
+    font-size: 22px;
+    text-shadow: 0 25px 13px #f8f8f8, 0 2px 8px #999999, 0 2px 200px #909090;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.coupon-p span {
+    text-decoration: underline;
+}
+
+.coupon-p2-left .coupon-p2 {
+    color: #702a98;
+    font-family: 'Lemonada', cursive;
+    font-size: 14px;
+    text-shadow: 0 25px 13px #f8f8f8, 0 2px 8px #999999, 0 2px 200px #909090;
+    text-align: left;
+    margin-top: -2%;
+}
+
+.coupon-block-p {
+    text-align: right;
+    color: #702a98;
+    font-family: 'Lemonada', cursive;
+    font-size: 12px;
+    text-shadow: 0 25px 13px #f8f8f8, 0 2px 8px #999999, 0 2px 200px #909090;
+}
+
+.coupon-block-p .fa-facebook-square {
+    font-size: 17px;
+    color: #4063aa;
+    padding: 5px;
+}
+
+.coupon-block-p .fa-globe {
+    font-size: 17px;
+    color: black;
+    padding: 5px;
+}
+
+.img-flower {
+    position: absolute;
+    width: 190px;
+    top: 0%;
+    left: 0%;
+}
+
+.coupon-p2-left {
+
+}
+
+.coupon-p2-left img {
+    margin-top: -12%;
+    width: 300px;
+}
+
+.img-coupon-logo {
+    width: 205px;
+    margin-top: 12px;
+}
+
+.coupon-text-2 {
+    POSITION: absolute;
+    top: 50%;
+    left: 19%;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    .img-flower {
+        width: 104px;
+    }
+
+    .coupon-p2-left img {
+        margin-top: -6%;
+    }
+
+    .coupon-p {
+        font-size: 20px;
+    }
+
+    .coupon-text {
+        top: 52%;
+        left: 27%;
+        font-size: 42px;
+    }
+
+    .coupon-text-2 {
+
+    }
+
+    .img-coupon-logo {
+        width: 183px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .coupon-text {
+        font-size: 27px;
+    }
+
+    .img-flower {
+        width: 71px;
+    }
+
+    .title-coupon h2 {
+        font-size: 27px;
+
+    }
+
+    .coupon-p {
+        font-size: 14px;
+        margin-bottom: -25px;
+    }
+
+    .coupon-block-p {
+        text-align: left;
+        margin-bottom: -12px;
+    }
+
+    .coupon-p2-left .coupon-p2 {
+        font-size: 11px;
+        margin-top: -7%;
+    }
+
+    .coupon-text-2 {
+        POSITION: absolute;
+        top: 50%;
+        left: 47%;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 400px) and (min-width: 300px) {
+    .coupon-text {
+        font-size: 22px;
+        left: 59%;
+    }
+
+    .img-coupon-logo {
+        width: 127px;
+        height: 127px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    .img-coupon-logo {
+        width: 158px;
+    }
+
+    .coupon-text {
+        font-size: 27px;
+        left: 31%;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 400px) {
+    .coupon-text {
+        font-size: 27px;
+        left: 64%;
+    }
+
+    .coupon-text-2 {
+        POSITION: absolute;
+        top: 50%;
+        left: 55%;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 380px) and (min-width: 350px) {
+    .coupon-text {
+        font-size: 22px;
+        left: 65%;
+    }
+
+    .coupon-text-2 {
+        POSITION: absolute;
+        top: 50%;
+        left: 56%;
+        color: white;
+
+    }
+}
+
+.coupon-details tbody, .coupon-block-p tbody {
+    background-color: transparent;
+    border: 0px solid #E2E6E9;
+}
+
+.coupon-details tbody td, .coupon-details .table > tbody > tr > td,
+.coupon-block-p tbody td, .coupon-block-p > tbody > tr > td {
+    border: 0px solid #E2E6E9;
+}
+
+.co-img-left {
+    max-width: 33.33333333%;
+}
+
+@media all {
+    .coupon {
+        -webkit-print-color-adjust: exact !important;
+        background-image: url("../../front/img/background.png") !important;
+        height: auto !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .table td {
+        -webkit-print-color-adjust: exact !important;
+        background-color: transparent !important;
+    }
+}

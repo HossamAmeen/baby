@@ -1,0 +1,626 @@
+/* Base Style
+========================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #F7F7F7;
+    color: #73879C;
+}
+
+.group::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.cuticon {
+	width: 100%;
+	border-bottom: 2px dotted #000;
+	position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cuticon img{
+    position: absolute;
+    top: -25px;
+    height: 50px;
+    left: 0;
+}
+.invoiceprint {
+ 	position: relative;
+}
+.invoiceprintimg {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    height: 340px;
+    opacity: 0.1;
+}
+.invoiceprintimg2 {
+    position: absolute;
+    top: 820px;
+    left: 50px;
+    height: 340px;
+    opacity: 0.1;
+}
+
+/* Menu Style
+========================================*/
+
+.container-fluid, .row {
+    height: 100%
+}
+
+.menu {
+    height: 100%;
+    background: #2A3F54;
+    overflow: auto;
+    box-shadow: 4px 0 6px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*Brand Name*/
+
+.brand-name {
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand-name img {
+    width: 30px;
+}
+
+.brand-name h3 {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+}
+
+.brand-name h3 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.brand-name h3 a:hover {
+    color: #FFF;
+}
+
+/*Profile Info*/
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-info img {
+    width: 50px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.profile-info p {
+    display: block;
+    color: #999;
+    text-align: center;
+}
+
+.profile-info p > span {
+    font-weight: bold;
+    color: white;
+}
+
+/*Links*/
+
+.links {
+    /*margin-bottom: 6px;*/
+}
+
+.links .link {
+    padding: 15px 10px;
+}
+
+.links .link.active {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+    /*padding: 15px 10px;*/
+}
+
+.links .link:hover {
+    cursor: pointer;
+}
+
+.links .link > i {
+    float: left;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-right: 15px;
+}
+
+.links .link a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.links .link a:focus,
+.links .link a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.links .link > span {
+    float: right;
+    color: #999;
+}
+
+.links .link-data ul {
+    color: white;
+    font-size: 13px;
+    position: relative;
+}
+
+.links .link-data ul > li > a {
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.links .link-data ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/*Sub-Links*/
+
+.links .link-data .sub-link a {
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    padding: 10px 10px 10px 20px; /*10px 10px 10px 50px*/
+    text-decoration: none;
+}
+
+.links .link-data .sub-link a i.fa-circle {
+    margin-right: 10px;
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.links .link-data .sub-link a span {
+    float: right;
+    font-size: 10px;
+    color: #999;
+}
+
+.links .link-data .sub-link:hover > a {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.links .link-data .sub-link-data a {
+    /*padding-left: 70px;*/
+    /*padding-left: 80px;*/
+}
+
+/* Content Style
+========================================*/
+
+.content {
+    padding-left: 250px;
+    padding-right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.content .nav-bar {
+    background: #EDEDED;
+    width: 100%;
+    height: 80px;
+}
+
+.content .nav-bar span {
+    display: inline-block;
+    height: 100%;
+    float: left;
+    line-height: 80px;
+    margin-left: 15px;
+}
+
+.content .nav-bar span > i {
+    cursor: pointer;
+    color: #5A738E;
+}
+
+.content .nav-bar span > i:hover {
+    color: #23527c;
+}
+
+/*Language Group*/
+
+.content .nav-bar .language {
+    float: right;
+}
+
+.content .nav-bar ul.lang {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content .nav-bar ul.lang li {
+    display: inline-block;
+}
+
+.content .nav-bar span i {
+    font-size: 27px;
+}
+
+.content .nav-bar .language {
+    float: right;
+    line-height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.content .nav-bar .language:hover {
+    background: #D9DEE4;
+}
+
+/*Log Out*/
+
+.logout {
+    float: right;
+    line-height: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logout:hover {
+    background: #D9DEE4;
+}
+
+.logout a {
+    display: block;
+    color: #5A738E;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    color: #23527c;
+}
+
+.logout a span {
+    margin-left: 0 !important;
+    margin-right: 10px;
+}
+
+/* Toggle Class
+========================================*/
+
+.menu.toggle {
+    position: fixed;
+    transform: translateX(-210px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu.toggle .brand-name {
+    display: none;
+}
+
+.menu.toggle .profile-info {
+    display: none;
+}
+
+.menu.toggle .links {
+    display: none;
+}
+
+.content.toggle {
+    padding-left: 40px;
+}
+
+/* Information
+========================================*/
+
+.information {
+    height: 100%;
+    width: 95%;
+    padding: 20px;
+    background: #FFF;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #E6E9ED;
+}
+
+/* Control Buttons
+========================================*/
+
+.ctrl-btns {
+    width: 100%;
+    height: 64px;
+    float: left;
+    padding: 15px 15px 15px 7px;
+}
+
+.btn {
+    padding: 6px 25px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+/* Table
+========================================*/
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+thead {
+    background: rgba(52, 73, 94, 0.94); /*#708090*/
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: #5a6673;
+    color: #FFF;
+}
+
+thead th {
+    padding: 17px 3px;
+    border: 3px solid #5a6673;
+    text-align: center;
+}
+
+tbody {
+    background-color: #FFF;
+    border: 3px solid #E2E6E9;
+}
+
+tbody td {
+    padding: 5px 3px;
+    border: 3px solid #E2E6E9;
+}
+
+tfoot {
+    background: #B8C0C8;
+    border: 3px solid #A9B3BC;
+}
+
+tfoot td {
+    padding: 5px 3px;
+    border: 3px solid #A9B3BC;
+}
+
+/* Pages
+========================================*/
+
+/*Buttons Top*/
+
+.btns-top {
+  margin: 18px 5px 25px 0px;
+}
+
+/*Table*/
+
+.wrap {
+    overflow-x: auto;
+    clear: both;
+}
+
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+table.dataTable.no-footer {
+    margin-bottom: 20px;
+}
+
+table.table.table-striped.table-bordered.table-hover.dataTable.no-footer {
+    width: 100% !important;
+    margin-bottom: 0;
+}
+
+.dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+
+table#datatable {
+    width: 100% !important;
+}
+
+table tbody tr td a {
+    color: #5A738E;
+}
+
+table tbody tr td a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
+table.dataTable thead .sorting_asc {
+    background-image: url("../images/sort_both.png") !important;
+}
+
+table.dataTable thead .sorting_desc {
+    background-image: url("../images/sort_both.png") !important;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: rgba(38, 185, 154, 0.07);
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #ddd;
+}
+
+table.dataTable thead th, table.dataTable thead td,
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 0;
+}
+
+.permissionTable {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Buttons*/
+
+button {
+    outline: 0 !important;
+}
+
+.image-back {
+    margin-top: 5px;
+}
+
+/*Selects*/
+
+.select-group {
+    width: 250px;
+    display: inline-block;
+}
+
+label {
+    display: block;
+}
+
+/*Btns-Bottom*/
+
+button[type="submit"] {
+    display: inline-block;
+}
+
+/* Footer
+========================================*/
+
+footer {
+    position: relative !important;
+    bottom: 0;
+    padding-left: 250px !important;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    color: #73879C;
+}
+
+footer.toggle {
+    padding-left: 40px !important;
+}
+
+.copyrights {
+    padding: 10px 20px 0;
+}
+
+.copyrights a {
+    color: #73879c;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.copyrights a:hover {
+    color: #23527c;
+}
+
+/* Statistics
+========================================*/
+
+.statistics {
+    /*display: flex;
+    justify-content: space-around;*/
+    align-items: center;
+    width: 100%;
+    /*height: 158px;*/
+    text-align: center;
+    /*column-count: 3;
+    column-rule: 2px solid #ADB2B5;*/
+}
+
+.statistics .state {
+    margin-bottom: 10px;
+}
+
+.state i {
+    margin-right: 5px;
+}
+
+.state p {
+    font-size: 13px;
+}
+
+.state p:first-of-type {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+/* Close product Images
+===============================*/
+
+.pro_image {
+    display: inline-block !important;
+    position: relative;
+}
+
+button.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #222;
+    opacity: 1;
+}
+
+/* Selected Manufactory
+===============================*/
+.select2-container {
+    width: auto !important;
+    min-width: 200px !important;
+}
+
+/* Editor
+===============================*/
+.editor > div {
+    width: 100% !important;
+}
+
+.editor > div > div {
+    width: 100% !important;
+}
+
+#patient_allergies_ifr {
+    height:200px !important;
+}
+
+
+.mce-edit-area iframe {
+    height: 150px !important;
+}
+
+.diagtable, .analtable, .medtable, .raytable {
+    display: block;
+}
+.ui-datepicker {
+    z-index: 2!important;
+}
+
+/* panel */
+.progress {
+	background: #ccc;
+}
+
+
+
+

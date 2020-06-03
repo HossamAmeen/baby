@@ -1,0 +1,18 @@
+::placeholder {
+    text-align: left;
+    /*mozilla*/
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    text-align: left
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    text-align: left
+}
+
+::-webkit-input-placeholder {
+    text-align: left
+}
